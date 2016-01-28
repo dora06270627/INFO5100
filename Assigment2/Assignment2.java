@@ -108,6 +108,7 @@ public class Assignment2 {
 	/**
 	 * Find maximum and minimum in a given array, and return the max and min number
 	 */
+	 //Bug: Input 23,46,-7,3 Optput 46,3 The correct result should be 46,-7.
 	public int[] findMinMax(int[] nums){
 		int[] minmax=new int[2];
          int max=(nums[0]);
@@ -126,6 +127,7 @@ public class Assignment2 {
 	 * Fibonacci Number: f(N) = f(N-1)+f(N-2).
 	 * Typically, f(0)=f(1)=1. 
 	 */
+	 //what if n = 1?
 	public int[] fibonacciNumber(int n){
 		int f[]=new int[n];
 		f[0]=1;
