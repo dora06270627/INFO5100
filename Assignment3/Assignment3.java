@@ -50,7 +50,7 @@ public class Assignment3 {
 	/**
 	 * Given a sorted array, find whether there are duplicates in it.
 	 */
-	public boolean findDuplicates(int[] nums){
+	public boolean findDuplicates(int[] nums){//it works, but it could be faster. notice the array is sorted
 		for(int i=0;i<nums.length;i++){
 			for(int j=0;j<nums.length;j++){
 				if(nums[i]==nums[j] && i!=j){
@@ -66,7 +66,7 @@ public class Assignment3 {
 	 * You should return a new array which doesn't contain that number.
 	 * For example, input {1,2,3,4,5}, index = 1, you should return {1,3,4,5}.
 	 */
-	public int[] deteleElement(int[] nums,int index){
+	public int[] deteleElement(int[] nums,int index){// input 1,2,3,4,5  1, output 1,0,4,5           -5
 		int[] arr;
 		arr = new int[nums.length-1];
 		for(int i=0; i<nums.length-1; i++){
@@ -82,7 +82,7 @@ public class Assignment3 {
 	 * Given a integer 'n', return n%count, count is the number of digits of n
 	 * For example, n = 100, return 1
 	 */
-	public int countDigits(int n){
+	public int countDigits(int n){//input -10, output -1, should be 0.                     -2
 		String str = Integer.toString(n);
 		int count=str.length();
 		int result;
