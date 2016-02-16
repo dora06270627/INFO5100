@@ -84,13 +84,13 @@ public class Assignment4 {
 	 * use 'split' function. e.g. "I like soccer" --> 3. "I have 15 dollars" -->
 	 * 4
 	 */
-	public int countWords(String str) {
+	public int countWords(String str) {//good job. think about ESC: what if input is "I am\nstudent".
 		// Write Logic
 		int count = 0;
 		int space = 0;
 		for (int i = 0; i < str.length(); i++) {
 			if (str.charAt(i) == ' ') {
-				space = 0;
+				space = 0;//since 'space' could just be 0 and 1, you could use boolean instead of int
 			} else if (str.charAt(i) != ' ' && space == 0) {
 				space = 1;
 				count++;
@@ -165,7 +165,7 @@ public class Assignment4 {
 	public String countAndSay(String str) {
 		// Write logic
 		String result = "";
-		int[] count= new int[100];
+		int[] count= new int[100];//why 100? might be out of bound.            -2
 		for (int i = 0; i < str.length(); i++) {
 			char charAt = str.charAt(i);
 			count[charAt]++;
