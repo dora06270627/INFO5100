@@ -4,7 +4,7 @@ import java.util.Set;
 
 public class MidExam {
 
-	public void moveZeroes(int[] nums) {
+	public void moveZeroes(int[] nums) {//+5
 		if (nums == null || nums.length == 0) {
 			return;
 		}
@@ -20,7 +20,7 @@ public class MidExam {
 		}
 	}
 
-	public boolean isAnagram(String s, String t) {
+	public boolean isAnagram(String s, String t) {//sort is too expensive.            -2
 		if (s == null && t == null) {
 			return true;
 		}
@@ -36,7 +36,7 @@ public class MidExam {
 		return s.equals(t);
 	}
 
-	public boolean containsDuplicate(int[] nums) {
+	public boolean containsDuplicate(int[] nums) {// +5
 		Set<Integer> hashset = new HashSet<Integer>();
 		for (int i = 0; i < nums.length; i++) {
 			if (hashset.contains(nums[i])) {
@@ -59,7 +59,7 @@ public class MidExam {
 	        return result;
     }
 	
-	public int twoSum(int[] nums, int target) {
+	public int twoSum(int[] nums, int target) {// +15
 		Set<Integer> hasset = new HashSet<Integer>();
 		int count=0;
 		for (int i = 0; i < nums.length; i++) {
